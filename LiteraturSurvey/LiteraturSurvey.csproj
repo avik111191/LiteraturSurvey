@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="42175.html" />
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="DataClasses1.dbml">
