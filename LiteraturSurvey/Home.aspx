@@ -53,16 +53,20 @@
 
         </div>
 
-        <div ng-controller="Papers">
+        <div ng-controller="Papers" class="col-lg-10 col-lg-offset-1">
 <%--            <div class="panel panel-primary">...</div>--%>
+            <asp:HiddenField runat="server" ID="hdf_Test" />
           <div ng-repeat="x in papers_template">
               <div class="panel panel-primary">
-                <div class="panel-heading">{{x.Title}}</div>
+                <div class="panel-heading"><h2>Title : </h2>{{x.Title}}</div>
                 <div class="panel-body">
-                    <div class="row"><div class="col-md-10 col-md-offset-1">{{x.Authors}}</div></div>
-                    <div class="row">{{x.Contents}}</div>
+                    <div class="row"><h3></h3></div>
+                    <div class="row"><div class="col-md-10 col-md-offset-1"><h3>Authors : </h3> {{x.Authors}}</div></div>
+                     <div class="row"><h3></h3></div>
+                    <div class="row"><h3>Abstract :</h3> {{x.Contents}}</div>
                 </div>
-                <div class="panel-footer">{{x.Link}}</div>
+
+                <div class="panel-footer"><h3>Links : </h3>{{x.Link}}  <a href={{x.Link}}>Go to Web site</a></div>
               </div>
           </div>
 
